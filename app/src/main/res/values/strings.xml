@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BookMe</string>
+    <string name="port">BookMe</string>
+    <string name="url">BookMe</string>
+    <string name="no">Not registered?</string>
+    <string name="login">Enter</string>
+</resources>
