@@ -22,12 +22,14 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="0dp"
                 android:hint="email"
+                android:id="@+id/email"
                 android:textAlignment="center"
                 android:background="@drawable/text"/>
             <EditText
                 android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:id="@+id/passwd"
                 android:layout_marginTop="40dp"
                 android:textAlignment="center"
                 android:hint="password"
@@ -44,6 +46,7 @@
                 android:layout_height="40dp"
                 android:layout_marginLeft="20dp"
                 android:text="@string/no"
+                android:onClick="register"
                 android:background="@drawable/button"/>
             <Button
                 android:layout_width="150dp"
