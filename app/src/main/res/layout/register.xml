@@ -1,6 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".logIn">
+    <LinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:inputType="textPersonName"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"
+                    android:hint="Name"
+                    android:id="@+id/name"
+                    android:textAlignment="center"
+                    android:background="@drawable/text"/>
+                <EditText
+                    android:inputType="textPersonName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/surname"
+                    android:layout_marginTop="0dp"
+                    android:textAlignment="center"
+                    android:hint="Surname"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/text"/>
+            </LinearLayout>
+
+            <EditText
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/email"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"
+                android:hint="email"
+                android:background="@drawable/text"/>
+            <EditText
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/passwd"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"
+                android:hint="password"
+                android:background="@drawable/text"/>
+            <EditText
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/passwd2"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"
+                android:hint="repeat password"
+                android:background="@drawable/text"/>
+
+            <LinearLayout
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="80dp"
+                    android:text="@string/login"
+                    android:onClick="login"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/button2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

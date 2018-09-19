@@ -6,11 +6,13 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@null</item>
     </style>
 
     <style name="Custom" parent="Theme.AppCompat.Light.NoActionBar">
 
         <item name="colorPrimary">#212121</item>
+        <item name="android:windowAnimationStyle">@null</item>
 
     </style>
 </resources>
